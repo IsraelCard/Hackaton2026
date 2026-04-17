@@ -1,16 +1,18 @@
 export const ZONAS: Record<string, { lat: number; lng: number }> = {
   "Centro Histórico": { lat: 20.5886, lng: -100.3899 },
+  "Jardín Guerrero" : {lat : 20.5921 , lng : -100.3952},
   "Blvd. Bernardo Quintana": { lat: 20.6011, lng: -100.4155 },
   "Constituyentes": { lat: 20.5780, lng: -100.4020 },
   "Corregidora": { lat: 20.5560, lng: -100.3920 },
   "Juriquilla": { lat: 20.7010, lng: -100.4410 },
   "El Marqués": { lat: 20.5230, lng: -100.3400 },
   "Periferico": { lat: 20.6200, lng: -100.4300 },
+  "Los arcos": {lat : 20.5973 , lng : -100.3716},
+  "Universidad Autónoma de Querétaro": {lat : 20.5912 , lng : -100.4100}
 };
 
 export const DIAS_FESTIVOS = new Set([
-  "01-01", "02-03", "03-17", "04-17", "04-18",
-  "05-01", "05-05", "09-16", "11-02", "11-17",
+  "01-01", "02-03", "03-17","04-03", "05-01", "05-05", "09-16", "11-02", "11-17",
   "12-12", "12-25",
 ]);
 
