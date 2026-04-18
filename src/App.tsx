@@ -26,15 +26,6 @@ export default function App() {
   // Constants
   const todayStr = new Intl.DateTimeFormat('es-MX', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }).format(new Date());
 
-  // Initialization
-  useEffect(() => {
-    handlePredict();
-    // System Theme Detection
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setIsDark(true);
-    }
-  }, []);
-
   // Sync Theme with DOM
   useEffect(() => {
     if (isDark) {
@@ -54,6 +45,7 @@ export default function App() {
       setResult({ analysis: prediction, data });
     } catch (error) {
       console.error(error);
+      console.log("A");
     } finally {
       setLoading(false);
     }
